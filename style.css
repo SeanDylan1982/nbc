@@ -29,7 +29,6 @@ main {
 }
 
 .nav-link {
-  margin: 0 10px;
   transition: all .1s ease-in-out;
   font-weight: 500;
   color: #f1f1f1;
@@ -53,7 +52,7 @@ main {
 
 .form-inline input {
   position: relative;
-  right: -120px;
+  right: -50px;
   width: 250px;
 }
 
@@ -231,4 +230,49 @@ td {
   margin: 50px 0;
   padding: 50px 0;
   left: -10%;
+}
+
+#popi-img {
+  position: absolute;
+  top: -25px;
+  left: -300px;
+  width: 200px;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+#popi-img:hover {
+  cursor: pointer;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#popi-disclaimer {
+  position: absolute;
+  top: 50px;
+  left: -300px;
+  width: 750px;
+  height: 500px;
+  border: 1px solid #1a1a1a44;
+  box-shadow: 0 0 15px #1a1a1a;
+  z-index: 2;
+  background-color: #f1f1f1;
+  margin: 20px;
+  padding: 20px;
+}
+
+#text-container {
+  position: relative;
+  top: -30px;
+  width: 800px;
+  height: 100%;
+}
+
+#directions-container {
+  position: relative;
+  top: -30px;
+  width: 800px;
+  height: 100%;
 }

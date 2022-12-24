@@ -33,3 +33,11 @@ function galleryCarousel(){
   });
 };
 setInterval(galleryCarousel, 5000);
+
+const popiBtn = document.getElementById('popi-img');
+const popiDisclaimerText = document.getElementById("popi-disclaimer");
+
+function popiDisclaimer() {
+popiDisclaimerText.classList.toggle('hidden')
+}
+popiBtn.addEventListener("click", popiDisclaimer)
