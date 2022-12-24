@@ -1,0 +1,107 @@
+html {
+  font-family: 'Asap', 'Poppins', sans-serif;
+  display: flex;
+}
+
+.navbar {
+  position: absolute;
+  height: 65px;
+  width: 100vw;
+  display: flex;
+  justify-content: baseline;
+  font-size: 1.2rem;
+  background: linear-gradient(5deg, #298135 30%, #1b9c2d 40%, #298135 70%);
+  color: #f1f1f1;
+  box-shadow: 0 0 15px #1a1a1a;
+  z-index: 2;
+  font-weight: bold;
+}
+
+.nav-link {
+  margin: 0 10px;
+  transition: all .1s ease-in-out;
+  font-weight: 500;
+  color: #f1f1f1;
+  /* background-color: #53ac5f; */
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  transition: all .1s ease-in-out;
+  background-color: #53ac5f;
+  color: #f1f1f1;
+}
+
+.form-inline {
+  position: relative;
+  display: flex;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+
+.form-inline input {
+  position: relative;
+  right: -100px;
+  width: 350px;
+}
+
+.slider-container {
+  width: 1000px;
+  margin: auto;
+  height: 600px;
+  max-width: 80rem;
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-top: 2rem;
+  object-fit: fill;
+  border-radius: 10px;
+}
+.slide {
+  position: absolute;
+  width: 1000px;
+  height: 600px;
+  display: grid;
+  place-items: center;
+  transition: all 0.9s ease-in-out;
+  text-align: center;
+  border-radius: 10px;
+}
+.slide-img {
+  height: 600px;
+  border-radius: 10px;
+}
+.slide h1 {
+  font-size: 5rem;
+}
+.slide:nth-child(1) h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+@media screen and (min-width: 576px) {
+  .slider-container {
+    height: 45vh;
+  }
+}
+@media screen and (min-width: 768px) {
+  .slider-container {
+    height: 55vh;
+  }
+}
+@media screen and (min-width: 992px) {
+  .slider-container {
+    height: 65vh;
+  }
+}
+
+iframe {
+  position: relative;
+  top: 10px;
+  left: 245px;
+  width: 70vw;
+  height: 100vh;
+}
