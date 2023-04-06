@@ -41,3 +41,75 @@ function popiDisclaimer() {
 popiDisclaimerText.classList.toggle('hidden')
 }
 popiBtn.addEventListener("click", popiDisclaimer)
+
+const newsBtn = document.getElementById('news-img');
+const newsDisclaimerText = document.getElementById("news-disclaimer");
+
+function newsDisclaimer() {
+newsDisclaimerText.classList.toggle('hidden')
+}
+newsBtn.addEventListener("click", newsDisclaimer)
+
+const cardingsBtn = document.getElementById('cardings-img');
+const cardingsDisclaimerText = document.getElementById("cardings-disclaimer");
+
+function cardingsDisclaimer() {
+cardingsDisclaimerText.classList.toggle('hidden')
+}
+cardingsBtn.addEventListener("click", cardingsDisclaimer)
+
+const contactBtn = document.getElementById('contact-img');
+const contactDisclaimerText = document.getElementById("contact-disclaimer");
+
+function contactDisclaimer() {
+contactDisclaimerText.classList.toggle('hidden')
+}
+contactBtn.addEventListener("click", contactDisclaimer)
+
+const tooltipgalleryBtn = document.getElementById('tooltip-gallery-img');
+const tooltipgalleryDisclaimerText = document.getElementById("tooltip-gallery-disclaimer");
+
+function tooltipgalleryDisclaimer() {
+tooltipgalleryDisclaimerText.classList.toggle('hidden')
+}
+tooltipgalleryBtn.addEventListener("click", tooltipgalleryDisclaimer)
+
+
+
+
+
+const tooltipSlides = document.querySelectorAll(".tooltip-slide");
+const tooltipGallery = document.querySelectorAll(".tooltip-gallery");
+
+tooltipGallery.forEach(function(tooltipGallery, index){
+  tooltipGallery.style.left = `${index * 100}%`;
+});
+
+tooltipSlides.forEach(function(tooltipSlide, index){
+  tooltipSlide.style.left = `${index * 100}%`;
+});
+
+let tooltipSlidesCounter = 0;
+let tooltipGalleryCounter = 0;
+
+function tooltipSlidesCarousel(){
+  tooltipSlidesCounter++;
+  if (tooltipSlidesCounter === 6){
+    tooltipSlidesCounter = 0;
+  }
+  tooltipSlides.forEach(function(tooltipSlide){
+    tooltipSlide.style.transform = `translateX(-${tooltipSlidesCounter * 100}%)`;
+  });
+};
+setInterval(tooltipSlidesCarousel, 5000);
+
+function tooltipGalleryCarousel(){
+  tooltipGalleryCounter++;
+  if (tooltipGalleryCounter === 6){
+    tooltipGalleryCounter = 0;
+  }
+  tooltipGallery.forEach(function(tooltipGallery){
+    tooltipGallery.style.transform = `translateX(-${tooltipGalleryCounter * 100}%)`;
+  });
+};
+setInterval(tooltipGalleryCarousel, 5000);
