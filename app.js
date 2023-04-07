@@ -14,7 +14,7 @@ let galleryCounter = 0;
 
 function slidesCarousel() {
   slidesCounter++;
-  if (slidesCounter === 6) {
+  if (slidesCounter === 7) {
     slidesCounter = 0;
   }
   slides.forEach(function (slide) {
@@ -25,7 +25,7 @@ setInterval(slidesCarousel, 5000);
 
 function galleryCarousel() {
   galleryCounter++;
-  if (galleryCounter === 6) {
+  if (galleryCounter === 7) {
     galleryCounter = 0;
   }
   gallery.forEach(function (gallery) {
@@ -105,7 +105,7 @@ setInterval(tooltipSlidesCarousel, 5000);
 
 function tooltipGalleryCarousel() {
   tooltipGalleryCounter++;
-  if (tooltipGalleryCounter === 6) {
+  if (tooltipGalleryCounter === 7) {
     tooltipGalleryCounter = 0;
   }
   tooltipGallery.forEach(function (tooltipGallery) {

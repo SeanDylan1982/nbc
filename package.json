@@ -6,7 +6,8 @@
     "jsonwebtoken": "^9.0.0",
     "mongodb": "^5.2.0",
     "mongoose": "^7.0.3",
-    "node": "^19.8.1"
+    "node": "^19.8.1",
+    "php": "^1.0.2"
   },
   "name": "nbc",
   "description": "[![Netlify Status](https://api.netlify.com/api/v1/badges/941b07db-4e2f-49e6-afea-e8bdb514ad15/deploy-status)](https://app.netlify.com/sites/nbc-benoni/deploys)",
