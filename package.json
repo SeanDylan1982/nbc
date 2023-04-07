@@ -1,5 +1,32 @@
 {
   "dependencies": {
-    "fullcalendar": "^6.1.5"
-  }
+    "bcryptjs": "^2.4.3",
+    "express": "^4.18.2",
+    "fullcalendar": "^6.1.5",
+    "jsonwebtoken": "^9.0.0",
+    "mongodb": "^5.2.0",
+    "mongoose": "^7.0.3",
+    "node": "^19.8.1"
+  },
+  "name": "nbc",
+  "description": "[![Netlify Status](https://api.netlify.com/api/v1/badges/941b07db-4e2f-49e6-afea-e8bdb514ad15/deploy-status)](https://app.netlify.com/sites/nbc-benoni/deploys)",
+  "version": "1.0.0",
+  "main": "app.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seandylan1982/nbc.git"
+  },
+  "author": "Sean Dylan Patterson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seandylan1982/nbc/issues"
+  },
+  "homepage": "https://github.com/seandylan1982/nbc#readme",
+  "keywords": []
 }
