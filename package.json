@@ -5,7 +5,7 @@
     "fullcalendar": "^6.1.5",
     "jsonwebtoken": "^9.0.0",
     "mongodb": "^5.2.0",
-    "mongoose": "^7.0.3",
+    "mongoose": "^7.3.3",
     "node": "^19.8.1",
     "php": "^1.0.2"
   },
